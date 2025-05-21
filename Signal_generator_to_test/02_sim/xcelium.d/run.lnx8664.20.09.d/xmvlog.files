@@ -1,0 +1,26 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+/home/admin/slytherin/Lab1fpga_WaveformGenerator/00_src/btn_detect/00_src/edge_rise_set_en.sv
+/home/admin/slytherin/Lab1fpga_WaveformGenerator/00_src/mux_5to1.sv
+/home/admin/slytherin/Lab1fpga_WaveformGenerator/00_src/mux_6to1.sv
+/home/admin/slytherin/Lab1fpga_WaveformGenerator/00_src/Noise/00_src/clk_div.sv
+/home/admin/slytherin/Lab1fpga_WaveformGenerator/00_src/Noise/00_src/lfsr.sv
+/home/admin/slytherin/Lab1fpga_WaveformGenerator/00_src/Noise/00_src/noise_generator.sv
+/home/admin/slytherin/Lab1fpga_WaveformGenerator/00_src/Amp/00_src/Amp.sv
+/home/admin/slytherin/Lab1fpga_WaveformGenerator/00_src/PrefixMultiplication/00_src/booth_substep.sv
+/home/admin/slytherin/Lab1fpga_WaveformGenerator/00_src/PrefixMultiplication/00_src/boothmul.sv
+/home/admin/slytherin/Lab1fpga_WaveformGenerator/00_src/Wave/phase_accumulator.sv
+/home/admin/slytherin/Lab1fpga_WaveformGenerator/00_src/Wave/Sine/00_src/sine_lut.sv
+/home/admin/slytherin/Lab1fpga_WaveformGenerator/00_src/Wave/Sine/00_src/sine_wave.sv
+/home/admin/slytherin/Lab1fpga_WaveformGenerator/00_src/Wave/Square/00_src/square_lut.sv
+/home/admin/slytherin/Lab1fpga_WaveformGenerator/00_src/Wave/Square/00_src/square_wave.sv
+/home/admin/slytherin/Lab1fpga_WaveformGenerator/00_src/Wave/Triangle/00_src/triangle_lut.sv
+/home/admin/slytherin/Lab1fpga_WaveformGenerator/00_src/Wave/Triangle/00_src/triangle_wave.sv
+/home/admin/slytherin/Lab1fpga_WaveformGenerator/00_src/Wave/Sawtooth/00_src/sawtooth_lut.sv
+/home/admin/slytherin/Lab1fpga_WaveformGenerator/00_src/Wave/Sawtooth/00_src/sawtooth_wave.sv
+/home/admin/slytherin/Lab1fpga_WaveformGenerator/00_src/Wave/Ecg/00_src/ecg_lut.sv
+/home/admin/slytherin/Lab1fpga_WaveformGenerator/00_src/Wave/Ecg/00_src/ecg_wave.sv
+/home/admin/slytherin/Lab1fpga_WaveformGenerator/00_src/wave_gen.sv
+/home/admin/slytherin/Lab1fpga_WaveformGenerator/01_tb/testbench.sv

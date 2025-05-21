@@ -1,0 +1,87 @@
+xrun(64): 20.09-s001: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	20.09-s001: Started on Mar 31, 2025 at 03:13:13 EDT
+xrun
+	-gui
+	+xm64bit
+	-sv
+	-f ../00_src/flist.f
+		../00_src/btn_detect/00_src/edge_rise_set_en.sv
+		../00_src/mux_5to1.sv
+		../00_src/mux_6to1.sv
+		../00_src/Noise/00_src/clk_div.sv
+		../00_src/Noise/00_src/lfsr.sv
+		../00_src/Noise/00_src/noise_generator.sv
+		../00_src/Amp/00_src/Amp.sv
+		../00_src/PrefixMultiplication/00_src/booth_substep.sv
+		../00_src/PrefixMultiplication/00_src/boothmul.sv
+		../00_src/Wave/phase_accumulator.sv
+		../00_src/Wave/Sine/00_src/sine_lut.sv
+		../00_src/Wave/Sine/00_src/sine_wave.sv
+		../00_src/Wave/Square/00_src/square_lut.sv
+		../00_src/Wave/Square/00_src/square_wave.sv
+		../00_src/Wave/Triangle/00_src/triangle_lut.sv
+		../00_src/Wave/Triangle/00_src/triangle_wave.sv
+		../00_src/Wave/Sawtooth/00_src/sawtooth_lut.sv
+		../00_src/Wave/Sawtooth/00_src/sawtooth_wave.sv
+		../00_src/Wave/Ecg/00_src/ecg_lut.sv
+		../00_src/Wave/Ecg/00_src/ecg_wave.sv
+		../00_src/wave_gen.sv
+	../01_tb/testbench.sv
+	-timescale 1ns/1ns
+	+ntb_random_seed=automatic
+	+access+rcw
+
+   User defined plus("+") options:
+	+ntb_random_seed=automatic
+
+Recompiling... reason: file '../00_src/wave_gen.sv' is newer than expected.
+	expected: Mon Mar 31 02:45:22 2025
+	actual:   Mon Mar 31 03:13:00 2025
+file: ../00_src/wave_gen.sv
+	module worklib.wave_gen:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+     noise_generator noise_gen(
+                             |
+xmelab: *W,CUVWSP (../00_src/wave_gen.sv,89|29): 1 output port was not connected:
+xmelab: (../00_src/Noise/00_src/noise_generator.sv,11): analog_noise
+
+	Top level design units:
+		testbench
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+        .square_value(square_out)
+                               |
+xmelab: *W,CUVMPW (../00_src/Wave/Square/00_src/square_wave.sv,25|31): port sizes differ in port connection(1/16) for the instance(testbench.uut.square_wv) .
+        .in1(square_out),
+                      |
+xmelab: *W,CUVMPW (../00_src/wave_gen.sv,101|22): port sizes differ in port connection(1/16) for the instance(testbench.uut) .
+        .amp_out(wave_digital)
+                            |
+xmelab: *W,CUVMPW (../00_src/wave_gen.sv,124|28): port sizes differ in port connection(16/32) for the instance(testbench.uut) .
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.wave_gen:sv <0x299bebcc>
+			streams:  17, words:  3600
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                46      22
+		Registers:             144      53
+		Scalar wires:           73       -
+		Expanded wires:         29       3
+		Vectored wires:         76       -
+		Always blocks:          53      25
+		Initial blocks:          9       9
+		Cont. assignments:      10      14
+		Pseudo assignments:     43      43
+		Simulation timescale:  1ns
+	Writing initial simulation snapshot: worklib.testbench:sv
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /opt/cadence/XCELIUM2009/tools/xcelium/files/xmsimrc
+xcelium> 

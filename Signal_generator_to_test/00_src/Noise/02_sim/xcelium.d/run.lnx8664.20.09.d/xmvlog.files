@@ -1,0 +1,9 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+/home/admin/slytherin/Lab1fpga_WaveformGenerator/00_src/Noise/00_src/mux_5to1.sv
+/home/admin/slytherin/Lab1fpga_WaveformGenerator/00_src/Noise/00_src/clk_div.sv
+/home/admin/slytherin/Lab1fpga_WaveformGenerator/00_src/Noise/00_src/lfsr.sv
+/home/admin/slytherin/Lab1fpga_WaveformGenerator/00_src/Noise/00_src/noise_generator.sv
+/home/admin/slytherin/Lab1fpga_WaveformGenerator/00_src/Noise/01_tb/testbench.sv

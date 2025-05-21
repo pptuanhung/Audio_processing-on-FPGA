@@ -1,0 +1,6 @@
+
+
+D:/slytherin/simple_demo_genwave_core/gen12Mhz.v
+
+Mar 29 08PM:48:42>: Megafunction PLL Intel FPGA IP v23.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted

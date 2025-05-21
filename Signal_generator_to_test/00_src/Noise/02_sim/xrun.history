@@ -1,0 +1,8 @@
+s1(30Mar2025:13:19:12):  xrun -gui +xm64bit -sv -f ../00_src/flist.f ../01_tb/testbench.sv -timescale 1ps/1ps +ntb_random_seed=automatic +access+rcw 
+s2(30Mar2025:22:54:24):  xrun +xm64bit -sv -f ../00_src/flist.f ../01_tb/testbench.sv -timescale 1ps/1ps +ntb_random_seed=automatic +access+rcw 
+s3(30Mar2025:22:54:42):  xrun -gui +xm64bit -sv -f ../00_src/flist.f ../01_tb/testbench.sv -timescale 1ps/1ps +ntb_random_seed=automatic +access+rcw 
+s4(30Mar2025:22:59:31):  xrun -gui +xm64bit -sv -f ../00_src/flist.f ../01_tb/testbench.sv -timescale 1ps/1ps +ntb_random_seed=automatic +access+rcw 
+s5(30Mar2025:23:06:19):  xrun -gui +xm64bit -sv -f ../00_src/flist.f ../01_tb/testbench.sv -timescale 1ps/1ps +ntb_random_seed=automatic +access+rcw 
+s6(30Mar2025:23:10:55):  xrun -gui +xm64bit -sv -f ../00_src/flist.f ../01_tb/testbench.sv -timescale 1ps/1ps +ntb_random_seed=automatic +access+rcw 
+s7(30Mar2025:23:13:51):  xrun -gui +xm64bit -sv -f ../00_src/flist.f ../01_tb/testbench.sv -timescale 1ps/1ps +ntb_random_seed=automatic +access+rcw 
+s8(30Mar2025:23:17:26):  xrun -gui +xm64bit -sv -f ../00_src/flist.f ../01_tb/testbench.sv -timescale 1ps/1ps +ntb_random_seed=automatic +access+rcw 

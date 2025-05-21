@@ -1,0 +1,389 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'p2s_buffer_rjm_codec:FPGA_CODEC_BUFFER|clk_count[0]'
+Slack : -30.701
+TNS   : -344.384
+
+Type  : Slow 1100mV 85C Model Setup 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div8'
+Slack : -13.673
+TNS   : -161.775
+
+Type  : Slow 1100mV 85C Model Setup 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div2'
+Slack : -13.446
+TNS   : -159.976
+
+Type  : Slow 1100mV 85C Model Setup 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div4'
+Slack : -13.325
+TNS   : -158.790
+
+Type  : Slow 1100mV 85C Model Setup 'PLL_12MHZ|gen12mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -8.337
+TNS   : -198.873
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -6.637
+TNS   : -102.813
+
+Type  : Slow 1100mV 85C Model Setup 'setup_codec:CODEC_SETUP|i2c_codec_ctrl:I2C_PROTOCOL|clk_i2c'
+Slack : -4.012
+TNS   : -23.813
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.005
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'PLL_12MHZ|gen12mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.363
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'setup_codec:CODEC_SETUP|i2c_codec_ctrl:I2C_PROTOCOL|clk_i2c'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div2'
+Slack : 0.512
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div8'
+Slack : 0.589
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div4'
+Slack : 0.717
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'p2s_buffer_rjm_codec:FPGA_CODEC_BUFFER|clk_count[0]'
+Slack : 1.598
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'setup_codec:CODEC_SETUP|i2c_codec_ctrl:I2C_PROTOCOL|clk_i2c'
+Slack : -3.511
+TNS   : -14.032
+
+Type  : Slow 1100mV 85C Model Removal 'setup_codec:CODEC_SETUP|i2c_codec_ctrl:I2C_PROTOCOL|clk_i2c'
+Slack : 1.018
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div4'
+Slack : -2.225
+TNS   : -21.075
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div8'
+Slack : -2.225
+TNS   : -20.857
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div2'
+Slack : -2.225
+TNS   : -20.452
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'p2s_buffer_rjm_codec:FPGA_CODEC_BUFFER|clk_count[0]'
+Slack : -0.394
+TNS   : -8.338
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'setup_codec:CODEC_SETUP|i2c_codec_ctrl:I2C_PROTOCOL|clk_i2c'
+Slack : -0.394
+TNS   : -4.477
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'PLL_12MHZ|gen12mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.666
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 8.516
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'PLL_12MHZ|gen12mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 40.963
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'p2s_buffer_rjm_codec:FPGA_CODEC_BUFFER|clk_count[0]'
+Slack : -30.694
+TNS   : -343.168
+
+Type  : Slow 1100mV 0C Model Setup 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div8'
+Slack : -13.060
+TNS   : -154.613
+
+Type  : Slow 1100mV 0C Model Setup 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div2'
+Slack : -12.867
+TNS   : -153.252
+
+Type  : Slow 1100mV 0C Model Setup 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div4'
+Slack : -12.759
+TNS   : -152.151
+
+Type  : Slow 1100mV 0C Model Setup 'PLL_12MHZ|gen12mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -7.623
+TNS   : -181.466
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -6.270
+TNS   : -95.339
+
+Type  : Slow 1100mV 0C Model Setup 'setup_codec:CODEC_SETUP|i2c_codec_ctrl:I2C_PROTOCOL|clk_i2c'
+Slack : -4.155
+TNS   : -24.652
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : -0.301
+TNS   : -0.301
+
+Type  : Slow 1100mV 0C Model Hold 'PLL_12MHZ|gen12mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.263
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'setup_codec:CODEC_SETUP|i2c_codec_ctrl:I2C_PROTOCOL|clk_i2c'
+Slack : 0.455
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div8'
+Slack : 0.573
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div2'
+Slack : 0.599
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div4'
+Slack : 0.715
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'p2s_buffer_rjm_codec:FPGA_CODEC_BUFFER|clk_count[0]'
+Slack : 1.686
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'setup_codec:CODEC_SETUP|i2c_codec_ctrl:I2C_PROTOCOL|clk_i2c'
+Slack : -3.537
+TNS   : -14.133
+
+Type  : Slow 1100mV 0C Model Removal 'setup_codec:CODEC_SETUP|i2c_codec_ctrl:I2C_PROTOCOL|clk_i2c'
+Slack : 0.953
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div4'
+Slack : -2.225
+TNS   : -20.975
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div8'
+Slack : -2.225
+TNS   : -20.885
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div2'
+Slack : -2.225
+TNS   : -20.435
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'p2s_buffer_rjm_codec:FPGA_CODEC_BUFFER|clk_count[0]'
+Slack : -0.394
+TNS   : -8.588
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'setup_codec:CODEC_SETUP|i2c_codec_ctrl:I2C_PROTOCOL|clk_i2c'
+Slack : -0.394
+TNS   : -4.445
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'PLL_12MHZ|gen12mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.666
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 8.448
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'PLL_12MHZ|gen12mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 40.914
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'p2s_buffer_rjm_codec:FPGA_CODEC_BUFFER|clk_count[0]'
+Slack : -16.193
+TNS   : -183.972
+
+Type  : Fast 1100mV 85C Model Setup 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div8'
+Slack : -8.640
+TNS   : -99.107
+
+Type  : Fast 1100mV 85C Model Setup 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div2'
+Slack : -8.525
+TNS   : -98.525
+
+Type  : Fast 1100mV 85C Model Setup 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div4'
+Slack : -8.441
+TNS   : -97.831
+
+Type  : Fast 1100mV 85C Model Setup 'PLL_12MHZ|gen12mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -7.105
+TNS   : -160.270
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -4.854
+TNS   : -72.239
+
+Type  : Fast 1100mV 85C Model Setup 'setup_codec:CODEC_SETUP|i2c_codec_ctrl:I2C_PROTOCOL|clk_i2c'
+Slack : -1.885
+TNS   : -10.887
+
+Type  : Fast 1100mV 85C Model Hold 'setup_codec:CODEC_SETUP|i2c_codec_ctrl:I2C_PROTOCOL|clk_i2c'
+Slack : 0.162
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'PLL_12MHZ|gen12mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.179
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.180
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div2'
+Slack : 0.217
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div8'
+Slack : 0.302
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div4'
+Slack : 0.451
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'p2s_buffer_rjm_codec:FPGA_CODEC_BUFFER|clk_count[0]'
+Slack : 0.721
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'setup_codec:CODEC_SETUP|i2c_codec_ctrl:I2C_PROTOCOL|clk_i2c'
+Slack : -1.569
+TNS   : -6.270
+
+Type  : Fast 1100mV 85C Model Removal 'setup_codec:CODEC_SETUP|i2c_codec_ctrl:I2C_PROTOCOL|clk_i2c'
+Slack : 0.483
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div4'
+Slack : -1.702
+TNS   : -13.812
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div2'
+Slack : -1.702
+TNS   : -13.616
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div8'
+Slack : -1.702
+TNS   : -13.616
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'setup_codec:CODEC_SETUP|i2c_codec_ctrl:I2C_PROTOCOL|clk_i2c'
+Slack : -0.003
+TNS   : -0.003
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'p2s_buffer_rjm_codec:FPGA_CODEC_BUFFER|clk_count[0]'
+Slack : 0.042
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'PLL_12MHZ|gen12mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.666
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 8.449
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'PLL_12MHZ|gen12mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 41.214
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'p2s_buffer_rjm_codec:FPGA_CODEC_BUFFER|clk_count[0]'
+Slack : -14.968
+TNS   : -169.016
+
+Type  : Fast 1100mV 0C Model Setup 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div8'
+Slack : -7.548
+TNS   : -86.481
+
+Type  : Fast 1100mV 0C Model Setup 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div2'
+Slack : -7.451
+TNS   : -86.080
+
+Type  : Fast 1100mV 0C Model Setup 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div4'
+Slack : -7.383
+TNS   : -85.519
+
+Type  : Fast 1100mV 0C Model Setup 'PLL_12MHZ|gen12mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : -5.800
+TNS   : -130.587
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -4.078
+TNS   : -59.120
+
+Type  : Fast 1100mV 0C Model Setup 'setup_codec:CODEC_SETUP|i2c_codec_ctrl:I2C_PROTOCOL|clk_i2c'
+Slack : -1.808
+TNS   : -10.397
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : -0.005
+TNS   : -0.005
+
+Type  : Fast 1100mV 0C Model Hold 'setup_codec:CODEC_SETUP|i2c_codec_ctrl:I2C_PROTOCOL|clk_i2c'
+Slack : 0.147
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'PLL_12MHZ|gen12mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.169
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div2'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div8'
+Slack : 0.272
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div4'
+Slack : 0.363
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'p2s_buffer_rjm_codec:FPGA_CODEC_BUFFER|clk_count[0]'
+Slack : 0.711
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'setup_codec:CODEC_SETUP|i2c_codec_ctrl:I2C_PROTOCOL|clk_i2c'
+Slack : -1.484
+TNS   : -5.933
+
+Type  : Fast 1100mV 0C Model Removal 'setup_codec:CODEC_SETUP|i2c_codec_ctrl:I2C_PROTOCOL|clk_i2c'
+Slack : 0.421
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div4'
+Slack : -1.702
+TNS   : -13.636
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div2'
+Slack : -1.702
+TNS   : -13.616
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'wave_gen:wave_gen_to_wm8731|noise_generator:noise_gen|clk_div:clk_div_inst|clk_div8'
+Slack : -1.702
+TNS   : -13.616
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'setup_codec:CODEC_SETUP|i2c_codec_ctrl:I2C_PROTOCOL|clk_i2c'
+Slack : 0.038
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'p2s_buffer_rjm_codec:FPGA_CODEC_BUFFER|clk_count[0]'
+Slack : 0.080
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'PLL_12MHZ|gen12mhz_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.666
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 8.439
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'PLL_12MHZ|gen12mhz_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk'
+Slack : 41.205
+TNS   : 0.000
+
+------------------------------------------------------------

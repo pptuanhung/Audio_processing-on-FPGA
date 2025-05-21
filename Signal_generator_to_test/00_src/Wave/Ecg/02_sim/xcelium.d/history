@@ -1,0 +1,6 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(30Mar2025:13:46:54):( xrun -gui +xm64bit -sv -f ../00_src/flist.f ../01_tb/testbench.sv -timescale 1ns/1ns +ntb_random_seed=automatic +access+rcw )
+s2::(30Mar2025:13:52:18):( xrun -gui +xm64bit -sv -f ../00_src/flist.f ../01_tb/testbench.sv -timescale 1ns/1ns +ntb_random_seed=automatic +access+rcw )

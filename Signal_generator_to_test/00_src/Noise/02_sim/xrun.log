@@ -1,0 +1,272 @@
+xrun(64): 20.09-s001: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	20.09-s001: Started on Mar 30, 2025 at 23:17:25 EDT
+xrun
+	-gui
+	+xm64bit
+	-sv
+	-f ../00_src/flist.f
+		../00_src/mux_5to1.sv
+		../00_src/clk_div.sv
+		../00_src/lfsr.sv
+		../00_src/noise_generator.sv
+	../01_tb/testbench.sv
+	-timescale 1ps/1ps
+	+ntb_random_seed=automatic
+	+access+rcw
+
+   User defined plus("+") options:
+	+ntb_random_seed=automatic
+
+Recompiling... reason: file '../00_src/lfsr.sv' is newer than expected.
+	expected: Sun Mar 30 23:13:40 2025
+	actual:   Sun Mar 30 23:17:04 2025
+file: ../00_src/lfsr.sv
+	module worklib.lfsr:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		testbench
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+        .noise_out(noise_out),
+                           |
+xmelab: *W,CUVMPW (../01_tb/testbench.sv,19|27): port sizes differ in port connection(24/4) for the instance(testbench) .
+        .analog_noise(analog_noise)
+                                 |
+xmelab: *W,CUVMPW (../01_tb/testbench.sv,20|33): port sizes differ in port connection(24/4) for the instance(testbench) .
+        .noise_out(noise_out)
+                           |
+xmelab: *W,CUVMPW (../00_src/noise_generator.sv,37|27): port sizes differ in port connection(4/8) for the instance(testbench.uut) .
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.lfsr:sv <0x4fdb9fa5>
+			streams:   7, words:  1888
+		worklib.noise_generator:sv <0x02a669fc>
+			streams:   4, words:  1281
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 5       5
+		Registers:              19      19
+		Scalar wires:           57       -
+		Expanded wires:          8       2
+		Vectored wires:          4       -
+		Always blocks:          11      11
+		Initial blocks:          3       3
+		Cont. assignments:       1       2
+		Pseudo assignments:     16      16
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.testbench:sv
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /opt/cadence/XCELIUM2009/tools/xcelium/files/xmsimrc
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm testbench.uut.lfsr_inst.lfsr_reg testbench.uut.lfsr_inst.noise_gain testbench.uut.lfsr_inst.noise_out
+Created probe 1
+xcelium> run
+xmsim: *W,SHMOFU: $shm_open - file waves.shm already in use (SHM database).
+            File: ../01_tb/testbench.sv, line = 23, pos = 16
+           Scope: testbench
+            Time: 0 FS + 0
+
+xmsim: *W,SHMNOSO: $shm_probe - SHM file not opened with $shm_open.
+            File: ../01_tb/testbench.sv, line = 24, pos = 17
+           Scope: testbench
+            Time: 0 FS + 0
+
+Time = 0 | noise_out = zzzzzx | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 55 | noise_out = zzzzz2 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 215 | noise_out = zzzzz4 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 300 | noise_out = zzzzz4 | freq_inc = 1 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 305 | noise_out = zzzzz9 | freq_inc = 1 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 320 | noise_out = zzzzz9 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 335 | noise_out = zzzzz3 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 375 | noise_out = zzzzz6 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 415 | noise_out = zzzzzd | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 455 | noise_out = zzzzza | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 495 | noise_out = zzzzz5 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 535 | noise_out = zzzzzb | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 571 | noise_out = zzzzzb | freq_inc = 1 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 575 | noise_out = zzzzz7 | freq_inc = 1 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 591 | noise_out = zzzzz7 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 595 | noise_out = zzzzzf | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 605 | noise_out = zzzzze | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 615 | noise_out = zzzzzc | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 625 | noise_out = zzzzz8 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 635 | noise_out = zzzzz1 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 645 | noise_out = zzzzz2 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 655 | noise_out = zzzzz4 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 665 | noise_out = zzzzz9 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 675 | noise_out = zzzzz3 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 685 | noise_out = zzzzz6 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 695 | noise_out = zzzzzd | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 705 | noise_out = zzzzza | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 715 | noise_out = zzzzz5 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 725 | noise_out = zzzzzb | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 735 | noise_out = zzzzz7 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 745 | noise_out = zzzzzf | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 755 | noise_out = zzzzze | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 765 | noise_out = zzzzzc | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 775 | noise_out = zzzzz8 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 785 | noise_out = zzzzz1 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 795 | noise_out = zzzzz2 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 805 | noise_out = zzzzz4 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 815 | noise_out = zzzzz9 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 825 | noise_out = zzzzz3 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 835 | noise_out = zzzzz6 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 841 | noise_out = zzzzz6 | freq_inc = 1 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 845 | noise_out = zzzzzd | freq_inc = 1 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 855 | noise_out = zzzzza | freq_inc = 1 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 861 | noise_out = zzzzza | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 865 | noise_out = zzzzz5 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 875 | noise_out = zzzzzb | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 885 | noise_out = zzzzz7 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 895 | noise_out = zzzzzf | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 905 | noise_out = zzzzze | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 915 | noise_out = zzzzzc | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 925 | noise_out = zzzzz8 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 935 | noise_out = zzzzz1 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 945 | noise_out = zzzzz2 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 955 | noise_out = zzzzz4 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 965 | noise_out = zzzzz9 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 975 | noise_out = zzzzz3 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 985 | noise_out = zzzzz6 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 995 | noise_out = zzzzzd | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1005 | noise_out = zzzzza | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1015 | noise_out = zzzzz5 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1025 | noise_out = zzzzzb | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1035 | noise_out = zzzzz7 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1045 | noise_out = zzzzzf | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1055 | noise_out = zzzzze | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1065 | noise_out = zzzzzc | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1075 | noise_out = zzzzz8 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1085 | noise_out = zzzzz1 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1095 | noise_out = zzzzz2 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1105 | noise_out = zzzzz4 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1111 | noise_out = zzzzz4 | freq_inc = 1 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1115 | noise_out = zzzzz9 | freq_inc = 1 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1125 | noise_out = zzzzz3 | freq_inc = 1 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1131 | noise_out = zzzzz3 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1135 | noise_out = zzzzz6 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1145 | noise_out = zzzzzd | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1155 | noise_out = zzzzza | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1165 | noise_out = zzzzz5 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1175 | noise_out = zzzzzb | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1185 | noise_out = zzzzz7 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1195 | noise_out = zzzzzf | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1205 | noise_out = zzzzze | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1215 | noise_out = zzzzzc | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1225 | noise_out = zzzzz8 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1235 | noise_out = zzzzz1 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1245 | noise_out = zzzzz2 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1255 | noise_out = zzzzz4 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1265 | noise_out = zzzzz9 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1275 | noise_out = zzzzz3 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1285 | noise_out = zzzzz6 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1295 | noise_out = zzzzzd | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1305 | noise_out = zzzzza | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1315 | noise_out = zzzzz5 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1325 | noise_out = zzzzzb | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1335 | noise_out = zzzzz7 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1345 | noise_out = zzzzzf | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1355 | noise_out = zzzzze | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1365 | noise_out = zzzzzc | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1375 | noise_out = zzzzz8 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1381 | noise_out = zzzzz8 | freq_inc = 1 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1385 | noise_out = zzzzz1 | freq_inc = 1 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1395 | noise_out = zzzzz2 | freq_inc = 1 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1401 | noise_out = zzzzz2 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1405 | noise_out = zzzzz4 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1415 | noise_out = zzzzz9 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1425 | noise_out = zzzzz3 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1435 | noise_out = zzzzz6 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1445 | noise_out = zzzzzd | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1455 | noise_out = zzzzza | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1465 | noise_out = zzzzz5 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1475 | noise_out = zzzzzb | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1485 | noise_out = zzzzz7 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1495 | noise_out = zzzzzf | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1505 | noise_out = zzzzze | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1515 | noise_out = zzzzzc | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1525 | noise_out = zzzzz8 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1535 | noise_out = zzzzz1 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1545 | noise_out = zzzzz2 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1555 | noise_out = zzzzz4 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1565 | noise_out = zzzzz9 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1575 | noise_out = zzzzz3 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1585 | noise_out = zzzzz6 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1595 | noise_out = zzzzzd | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1605 | noise_out = zzzzza | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1615 | noise_out = zzzzz5 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1625 | noise_out = zzzzzb | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1635 | noise_out = zzzzz7 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1645 | noise_out = zzzzzf | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1651 | noise_out = zzzzzf | freq_inc = 0 | freq_dec = 1 | gain_inc = 0 | gain_dec = 0
+Time = 1655 | noise_out = zzzzze | freq_inc = 0 | freq_dec = 1 | gain_inc = 0 | gain_dec = 0
+Time = 1671 | noise_out = zzzzze | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1695 | noise_out = zzzzzc | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1735 | noise_out = zzzzz8 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1775 | noise_out = zzzzz1 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1815 | noise_out = zzzzz2 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1855 | noise_out = zzzzz4 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1895 | noise_out = zzzzz9 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1921 | noise_out = zzzzz9 | freq_inc = 0 | freq_dec = 0 | gain_inc = 1 | gain_dec = 0
+Time = 1941 | noise_out = zzzzz9 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 1975 | noise_out = zzzzz2 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 2015 | noise_out = zzzzz7 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 2055 | noise_out = zzzzze | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 2095 | noise_out = zzzzzf | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 2135 | noise_out = zzzzz1 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 2175 | noise_out = zzzzz5 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 2191 | noise_out = zzzzz5 | freq_inc = 0 | freq_dec = 0 | gain_inc = 1 | gain_dec = 0
+Time = 2211 | noise_out = zzzzz5 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 2215 | noise_out = zzzzzb | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 2255 | noise_out = zzzzz6 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 2295 | noise_out = zzzzzc | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 2335 | noise_out = zzzzz8 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 2375 | noise_out = zzzzz5 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 2415 | noise_out = zzzzza | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 2455 | noise_out = zzzzz4 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 2461 | noise_out = zzzzz4 | freq_inc = 0 | freq_dec = 0 | gain_inc = 1 | gain_dec = 0
+Time = 2481 | noise_out = zzzzz4 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 2495 | noise_out = zzzzzf | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 2535 | noise_out = zzzzz5 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 2575 | noise_out = zzzzza | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 2615 | noise_out = zzzzzb | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 2655 | noise_out = zzzzz6 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 2695 | noise_out = zzzzz3 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 2731 | noise_out = zzzzz3 | freq_inc = 0 | freq_dec = 0 | gain_inc = 1 | gain_dec = 0
+Time = 2735 | noise_out = zzzzz8 | freq_inc = 0 | freq_dec = 0 | gain_inc = 1 | gain_dec = 0
+Time = 2751 | noise_out = zzzzz8 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 2775 | noise_out = zzzzzf | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 2815 | noise_out = zzzzz7 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 2855 | noise_out = zzzzze | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 2895 | noise_out = zzzzzc | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 2935 | noise_out = zzzzz8 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 2975 | noise_out = zzzzz9 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 3001 | noise_out = zzzzz9 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 1
+Time = 3015 | noise_out = zzzzze | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 1
+Time = 3021 | noise_out = zzzzze | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 3055 | noise_out = zzzzzc | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 3095 | noise_out = zzzzzf | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 3135 | noise_out = zzzzz5 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 3175 | noise_out = zzzzza | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 3215 | noise_out = zzzzzb | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 3255 | noise_out = zzzzz6 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 3295 | noise_out = zzzzz3 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 3335 | noise_out = zzzzzd | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 3375 | noise_out = zzzzz1 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 3415 | noise_out = zzzzz9 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 3455 | noise_out = zzzzz2 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Time = 3495 | noise_out = zzzzz4 | freq_inc = 0 | freq_dec = 0 | gain_inc = 0 | gain_dec = 0
+Simulation complete via $finish(1) at time 3521 PS + 0
+../01_tb/testbench.sv:66         $finish;
+xcelium> ...Regained control from SimVision
+-------------------------------------
+
+xcelium> TOOL:	xrun(64)	20.09-s001: Exiting on Mar 30, 2025 at 23:20:59 EDT  (total: 00:03:34)

@@ -1,0 +1,14 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-gui
++xm64bit
+-sv
+-f
+../00_src/flist.f
+../01_tb/testbench.sv
+-timescale
+1ns/1ns
++ntb_random_seed=automatic
++access+rcw

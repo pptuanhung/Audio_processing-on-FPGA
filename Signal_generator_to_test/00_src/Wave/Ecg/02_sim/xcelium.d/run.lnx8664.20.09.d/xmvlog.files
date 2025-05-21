@@ -1,0 +1,8 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+/home/admin/slytherin/Lab1fpga_WaveformGenerator/00_src/Wave/Ecg/00_src/phase_accumulator.sv
+/home/admin/slytherin/Lab1fpga_WaveformGenerator/00_src/Wave/Ecg/00_src/ecg_lut.sv
+/home/admin/slytherin/Lab1fpga_WaveformGenerator/00_src/Wave/Ecg/00_src/ecg_wave.sv
+/home/admin/slytherin/Lab1fpga_WaveformGenerator/00_src/Wave/Ecg/01_tb/testbench.sv

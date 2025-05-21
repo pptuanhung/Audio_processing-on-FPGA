@@ -1,0 +1,18 @@
+
+State Machine - |wrapper_wave_generator|p2s_buffer_rjm_codec:FPGA_CODEC_BUFFER|now_state
+Name now_state.READY now_state.SENDING now_state.WAITING 
+now_state.READY 0 0 0 
+now_state.WAITING 1 0 1 
+now_state.SENDING 1 1 0 
+
+State Machine - |wrapper_wave_generator|setup_codec:CODEC_SETUP|i2c_codec_ctrl:I2C_PROTOCOL|i2c_fsm
+Name i2c_fsm.GET_ACK_70 i2c_fsm.SEND_BYTE_70 i2c_fsm.GET_ACK_158 i2c_fsm.SEND_BYTE_158 i2c_fsm.GET_ACK_ADDR i2c_fsm.SEND_ADDR_I2C i2c_fsm.START i2c_fsm.0000 i2c_fsm.STOP 
+i2c_fsm.0000 0 0 0 0 0 0 0 0 0 
+i2c_fsm.START 0 0 0 0 0 0 1 1 0 
+i2c_fsm.SEND_ADDR_I2C 0 0 0 0 0 1 0 1 0 
+i2c_fsm.GET_ACK_ADDR 0 0 0 0 1 0 0 1 0 
+i2c_fsm.SEND_BYTE_158 0 0 0 1 0 0 0 1 0 
+i2c_fsm.GET_ACK_158 0 0 1 0 0 0 0 1 0 
+i2c_fsm.SEND_BYTE_70 0 1 0 0 0 0 0 1 0 
+i2c_fsm.GET_ACK_70 1 0 0 0 0 0 0 1 0 
+i2c_fsm.STOP 0 0 0 0 0 0 0 1 1 

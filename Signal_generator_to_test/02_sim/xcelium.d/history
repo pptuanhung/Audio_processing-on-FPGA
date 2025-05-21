@@ -1,0 +1,21 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(30Mar2025:23:21:27):( xrun -gui +xm64bit -sv -f ../00_src/flist.f ../01_tb/testbench.sv -timescale 1ns/1ns +ntb_random_seed=automatic +access+rcw )
+s2::(30Mar2025:23:25:31):( xrun +xm64bit -sv -f ../00_src/flist.f ../01_tb/testbench.sv -timescale 1ns/1ns +ntb_random_seed=automatic +access+rcw )
+s3::(30Mar2025:23:25:45):( xrun -gui +xm64bit -sv -f ../00_src/flist.f ../01_tb/testbench.sv -timescale 1ns/1ns +ntb_random_seed=automatic +access+rcw )
+s4::(30Mar2025:23:28:46):( xrun -gui +xm64bit -sv -f ../00_src/flist.f ../01_tb/testbench.sv -timescale 1ns/1ns +ntb_random_seed=automatic +access+rcw )
+s5::(30Mar2025:23:29:01):( xrun +xm64bit -sv -f ../00_src/flist.f ../01_tb/testbench.sv -timescale 1ns/1ns +ntb_random_seed=automatic +access+rcw )
+s6::(30Mar2025:23:29:24):( xrun +xm64bit -sv -f ../00_src/flist.f ../01_tb/testbench.sv -timescale 1ns/1ns +ntb_random_seed=automatic +access+rcw )
+s7::(30Mar2025:23:29:40):( xrun -gui +xm64bit -sv -f ../00_src/flist.f ../01_tb/testbench.sv -timescale 1ns/1ns +ntb_random_seed=automatic +access+rcw )
+s8::(30Mar2025:23:49:23):( xrun -gui +xm64bit -sv -f ../00_src/flist.f ../01_tb/testbench.sv -timescale 1ns/1ns +ntb_random_seed=automatic +access+rcw )
+s9::(30Mar2025:23:50:33):( xrun -gui +xm64bit -sv -f ../00_src/flist.f ../01_tb/testbench.sv -timescale 1ns/1ns +ntb_random_seed=automatic +access+rcw )
+s10::(30Mar2025:23:54:14):( xrun -gui +xm64bit -sv -f ../00_src/flist.f ../01_tb/testbench.sv -timescale 1ns/1ns +ntb_random_seed=automatic +access+rcw )
+s11::(31Mar2025:02:32:09):( xrun -gui +xm64bit -sv -f ../00_src/flist.f ../01_tb/testbench.sv -timescale 1ns/1ns +ntb_random_seed=automatic +access+rcw )
+s12::(31Mar2025:02:45:28):( xrun +xm64bit -sv -f ../00_src/flist.f ../01_tb/testbench.sv -timescale 1ns/1ns +ntb_random_seed=automatic +access+rcw )
+s13::(31Mar2025:02:47:18):( xrun +xm64bit -sv -f ../00_src/flist.f ../01_tb/testbench.sv -timescale 1ns/1ns +ntb_random_seed=automatic +access+rcw )
+s14::(31Mar2025:02:47:54):( xrun -gui +xm64bit -sv -f ../00_src/flist.f ../01_tb/testbench.sv -timescale 1ns/1ns +ntb_random_seed=automatic +access+rcw )
+s15::(31Mar2025:02:51:41):( xrun -gui +xm64bit -sv -f ../00_src/flist.f ../01_tb/testbench.sv -timescale 1ns/1ns +ntb_random_seed=automatic +access+rcw )
+s16::(31Mar2025:03:07:13):( xrun -gui +xm64bit -sv -f ../00_src/flist.f ../01_tb/testbench.sv -timescale 1ns/1ns +ntb_random_seed=automatic +access+rcw )
+s17::(31Mar2025:03:13:13):( xrun -gui +xm64bit -sv -f ../00_src/flist.f ../01_tb/testbench.sv -timescale 1ns/1ns +ntb_random_seed=automatic +access+rcw )
